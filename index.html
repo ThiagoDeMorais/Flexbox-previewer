@@ -10,12 +10,159 @@
 <body>
         <div id="biggerContainer">
             <div id="rightContainer">
-                
+                <div id="propertiesContainer">
+                    <h2>Flexbox</h2>
+                    <input type="checkbox"  checked >
+                    <form >
+                        <fieldset class="field">
+                            <legend>Propriedades para o container</legend>
+                            
+                            <div class="individualPropertiesContainer">
+                                <h3>flex-direction</h3>
+                                <input type="radio" name="flexDirection" checked>
+                                <label>row</label>
+                                <input type="radio" name="flexDirection">
+                                <label>row-reverse</label>
+                                <input type="radio" name="flexDirection">
+                                <label>column</label>
+                                <input type="radio" name="flexDirection" >
+                                <label>column-reverse</label>
+
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>align-content</h4>
+                                <input type="radio" name="alignContent" checked>
+                                <label>flex-start</label>
+                                <input type="radio" name="alignContent" >
+                                <label>flex-end</label>
+                                <input type="radio" name="alignContent" >
+                                <label>center</label>
+                                <input type="radio" name="alignContent" >
+                                <label>space-between</label>
+                                <input type="radio" name="alignContent" >
+                                <label>space-around</label>
+                                <div>
+                                    <input type="radio" name="alignContent" >
+                                    <label>stretch</label>
+                                </div>
+
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>justify-content </h4>
+                                <input type="radio" name="justifyContent" checked>
+                                <label>flex-start</label>
+                                <input type="radio" name="justifyContent" >
+                                <label>flex-end</label>
+                                <input type="radio" name="justifyContent" >
+                                <label>space-between</label>
+                                <input type="radio" name="justifyContent" >
+                                <label>center</label>
+                                <input type="radio" name="justifyContent" >
+                                <label>space-around</label>
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>align-items </h4>
+                                <input type="radio" name="alignItems" checked >
+                                <label>flex-start</label>
+                                <input type="radio" name="alignItems" >
+                                <label>flex-end</label>
+                                <input type="radio" name="alignItems" >
+                                <label>center</label>
+                                <input type="radio" name="alignItems" >
+                                <label>baseline</label>
+                                <input type="radio" name="alignItems" >
+                                <label>stretch</label>
+
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>flex-wrap</h4>
+                                <input type="radio" name="flexWrap" checked >
+                                <label>nowrap</label>
+                                <input type="radio" name="flexWrap" >
+                                <label>wrap</label>
+                                <input type="radio" name="flexWrap" >
+                                <label>wrap-reverse</label>
+                            </div>
+
+                        </fieldset>  
+
+                        <fieldset class="field">
+                            <legend>Propriedades para os elementos</legend>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>order </h4>
+                                <label>Box-1</label>
+                                <input type="number"  min="0" max="999" value="0">
+                                <label>Box-2</label>
+                                <input type="number"  min="0" max="999" value="0">                               
+                                <label>Box-3</label>
+                                <input type="number"  min="0" max="999" value="0"> 
+                            </div>                           
+
+                            <div class="individualPropertiesContainer">
+                                <h4>flex-grow</h4>
+                                <label>Box-1</label>
+                                <input type="number"  min="0" max="999" value="0">
+                                <label>Box-2</label>
+                                <input type="number"  min="0" max="999" value="0">                               
+                                <label>Box-3</label>
+                                <input type="number"  min="0" max="999" value="0">                 
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>flex-shrink</h4>
+                                <label>Box-1</label>
+                                <input type="number"  min="0" max="999" value="0">
+                                <label>Box-2</label>
+                                <input type="number"  min="0" max="999" value="0">                               
+                                <label>Box-3</label>
+                                <input type="number"  min="0" max="999" value="0"> 
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h4>flex-basis  </h4>
+                                <label>Box-1</label>
+                                <input type="number"  min="0" max="999" value="0">
+                                <label>Box-2</label>
+                                <input type="number"  min="0" max="999" value="0">                               
+                                <label>Box-3</label>
+                                <input type="number"  min="0" max="999" value="0"> 
+                            </div>
+
+                            <div class="individualPropertiesContainer">
+                                <h3>align-self(Para o Box-1)</h3>
+                                <input type="radio" name="alignSelf" checked >
+                                <label>auto</label>
+                                <input type="radio" name="alignSelf" >
+                                <label>flex-start</label>
+                                <input type="radio" name="alignSelf" >
+                                <label>flex-end</label>
+                                <input type="radio" name="alignSelf" >
+                                <label>center</label>
+                                <input type="radio" name="alignSelf" >
+                                <label>baseline</label>
+                                <input type="radio" name="alignSelf" >
+                                <label>stretch</label>
+                            </div>
+                            
+                        </fieldset>  
+
+
+                    </form>
+                </div>
+
+                <div id="propertiesElements">
+
+                </div>
             </div>
 
             <div id="leftContainer">
                 <div id="titleDisplay">
-                    <h1>Visualização - Flexbox</h1>
+                    <h1>Visualização</h1>
                 </div>
                 <div id="displayContainer">
                     <div class="box" id="box1"> Box-1</div>

@@ -6,16 +6,22 @@
     
 }
 
+
+
+h2{
+    display: inline-block;
+}
+
 #biggerContainer{
 
     margin: auto;
     padding: 10px;
-    width: 900px;
+    width: 940px;
 }
 
 #rightContainer{
     float:right;
-    width: 430px;
+    width: 450px;
     height: 510px;
     background-color: #242D34;
     padding: 10px;
@@ -25,7 +31,7 @@
 
 #leftContainer{
     padding: 10px;
-    width: 430px;
+    width: 450px;
     height: 510px;
     background-color: #242D34;
     text-align: center;
@@ -44,6 +50,7 @@
     border-radius: 5px;
     margin: auto;
     display: flex;
+    
 }
 
 .box{
@@ -53,15 +60,17 @@
 }
 
 #box1{
-
+    /*display: none; */
     background-color: green;
 }
 
 #box2{
+    /*display: none; */
     background-color: blue;
 }
 
 #box3{
+    /*display: none; */
     background-color: red;
 }
 
@@ -70,7 +79,7 @@
 }
 
 #visibilityContainer{
-    padding: 15px;
+    padding:    10px;
     border: solid rgb(255, 248, 248); 
     border-width: 1px;
 }
@@ -103,12 +112,34 @@
     background: red;
 }
 
+#propertiesContainer{
 
-
-#widthOfBoxe2Container{
+    text-align: center;
 }
 
-#widthOfBoxe3Container{
+.individualPropertiesContainer{
+    border: solid rgb(255, 248, 248); 
+    border-width: 1px;
+    font-size: 10px;
+    margin: 5px;
 }
 
+input[type=radio]{
+    height: 0.7em;
+}
+
+input[type=number]{
+    height: 0.7em;
+    color: #242D34; 
+    font-size: 10px ;
+
+}
+
+.propertiesTitle{
+    margin-bottom: 10px;
+}
+
+.field{
+    margin-top: 20px;
+}
 
