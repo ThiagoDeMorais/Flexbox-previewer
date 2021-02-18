@@ -28,19 +28,48 @@ function IncreaseDecrease(element) {
     let rangeBox = element;
     let rangeBoxArray = document.getElementsByClassName("rangeBox");
     let boxes = document.getElementsByClassName("box") ;
+    let theCSSprop;
 
     for(let i = 0; i<rangeBoxArray.length;i++){
         if(rangeBoxArray[i].id == rangeBox.id ){
             boxes[i].style.width = rangeBox.value + "px";
-            var theCSSprop = window.getComputedStyle(boxes[i], null).getPropertyValue("width")
-            console.log(theCSSprop);
+            theCSSprop = window.getComputedStyle(boxes[i], null).getPropertyValue("width")
+            console.log(theCSSprop);/**Remover */
         }
     }
 }
 /**IncreaseDecrease-- */
 
+/** Função responsável por modificar a propriedade flex-direction do container que contém os boxes 1,2 e 3*/
+/**FlexDirectionChange++ */
+function FlexDirectionChange(element) {
+    let theCSSprop;
+    let disPlayConteiner = document.getElementById("displayContainer");
+    console.log(disPlayConteiner);
+    switch(element.id){
+        case "flexDirection1":
+                console.log(flexDirection1);/**Remover */
+                disPlayConteiner.style.flexDirection = "row";
+                
+            break;
+        case "flexDirection2":
+            console.log(flexDirection2);/**Remover */
+            disPlayConteiner.style.flexDirection = "row-reverse";
 
+            break;
+        case "flexDirection3":
+            console.log(flexDirection3);/**Remover */
+            disPlayConteiner.style.flexDirection = "column";
 
+            break;
+        case "flexDirection4":
+            console.log(flexDirection4);/**Remover */
+            disPlayConteiner.style.flexDirection = "column-reverse";
+
+            break;                                                     
+    }
+}
+/**FlexDirectionChange-- */
 
 /*
 var v =(document.getElementById("visibilityContainer"));

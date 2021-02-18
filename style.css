@@ -50,6 +50,7 @@ h2{
     border-radius: 5px;
     margin: auto;
     display: flex;
+    flex-direction: row;
     
 }
 
@@ -57,6 +58,7 @@ h2{
     display: flex;
     border-radius: 5px;
     width:90px ;
+    height: 70px;/*Teste*/
 }
 
 #box1{
