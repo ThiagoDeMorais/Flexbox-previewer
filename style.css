@@ -54,13 +54,12 @@ h2{
 }
 
 .box{
+    display: flex;
     border-radius: 5px;
-
     width:90px ;
 }
 
 #box1{
-    /*display: none; */
     background-color: green;
 }
 
