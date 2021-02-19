@@ -30,19 +30,29 @@
                             </div>
 
                             <div class="individualPropertiesContainer">
+                                <h4>flex-wrap</h4>
+                                <input id="flexWrap1" onclick="FlexWrapChange(this)" class="flexWrap" type="radio" name="flexWrap" checked >
+                                <label>nowrap</label>
+                                <input id="flexWrap2" onclick="FlexWrapChange(this)" class="flexWrap" type="radio" name="flexWrap" >
+                                <label>wrap</label>
+                                <input id="flexWrap3" onclick="FlexWrapChange(this)" class="flexWrap" type="radio" name="flexWrap" >
+                                <label>wrap-reverse</label>
+                            </div>
+
+                            <div class="individualPropertiesContainer">
                                 <h4>align-content</h4>
-                                <input class="alignContent" type="radio" name="alignContent" checked>
+                                <input id="alignContent1" onclick="AlignContentChange(this)"  class="alignContent" type="radio" name="alignContent" checked>
                                 <label>flex-start</label>
-                                <input class="alignContent" type="radio" name="alignContent" >
+                                <input id="alignContent2" onclick="AlignContentChange(this)"  class="alignContent" type="radio" name="alignContent" >
                                 <label>flex-end</label>
-                                <input class="alignContent" type="radio" name="alignContent" >
+                                <input id="alignContent3" onclick="AlignContentChange(this)"  class="alignContent" type="radio" name="alignContent" >
                                 <label>center</label>
-                                <input class="alignContent" type="radio" name="alignContent" >
+                                <input id="alignContent4" onclick="AlignContentChange(this)"  class="alignContent" type="radio" name="alignContent" >
                                 <label>space-between</label>
-                                <input class="alignContent" type="radio" name="alignContent" >
+                                <input id="alignContent5" onclick="AlignContentChange(this)"  class="alignContent" type="radio" name="alignContent" >
                                 <label>space-around</label>
                                 <div>
-                                    <input class="alignContent" type="radio" name="alignContent" >
+                                    <input class="alignContent6" onclick="AlignContentChange(this)"  type="radio" name="alignContent" >
                                     <label>stretch</label>
                                 </div>
 
@@ -50,42 +60,33 @@
 
                             <div class="individualPropertiesContainer">
                                 <h4>justify-content </h4>
-                                <input class="justifyContent" type="radio" name="justifyContent" checked>
+                                <input id="justifyContent1" onclick="JustifyContentChange(this)" class="justifyContent" type="radio" name="justifyContent" checked>
                                 <label>flex-start</label>
-                                <input class="justifyContent" type="radio" name="justifyContent" >
+                                <input id="justifyContent2" onclick="JustifyContentChange(this)" class="justifyContent" type="radio" name="justifyContent" >
                                 <label>flex-end</label>
-                                <input class="justifyContent" type="radio" name="justifyContent" >
+                                <input id="justifyContent3" onclick="JustifyContentChange(this)" class="justifyContent" type="radio" name="justifyContent" >
                                 <label>space-between</label>
-                                <input class="justifyContent" type="radio" name="justifyContent" >
+                                <input id="justifyContent4" onclick="JustifyContentChange(this)"  class="justifyContent" type="radio" name="justifyContent" >
                                 <label>center</label>
-                                <input class="justifyContent" type="radio" name="justifyContent" >
+                                <input id="justifyContent5" onclick="JustifyContentChange(this)" class="justifyContent" type="radio" name="justifyContent" >
                                 <label>space-around</label>
                             </div>
 
                             <div class="individualPropertiesContainer">
                                 <h4>align-items </h4>
-                                <input class="alignItems" type="radio" name="alignItems" checked >
+                                <input id="alignItems1" onclick="AlignItems(this)"  class="alignItems" type="radio" name="alignItems" checked >
                                 <label>flex-start</label>
-                                <input class="alignItems" type="radio" name="alignItems" >
+                                <input id="alignItems2" onclick="AlignItems(this)" class="alignItems" type="radio" name="alignItems" >
                                 <label>flex-end</label>
-                                <input class="alignItems" type="radio" name="alignItems" >
+                                <input id="alignItems3" onclick="AlignItems(this)" class="alignItems" type="radio" name="alignItems" >
                                 <label>center</label>
-                                <input class="alignItems" type="radio" name="alignItems" >
+                                <input id="alignItems4" onclick="AlignItems(this)" class="alignItems" type="radio" name="alignItems" >
                                 <label>baseline</label>
-                                <input class="alignItems" type="radio" name="alignItems" >
+                                <input id="alignItems5" onclick="AlignItems(this)" class="alignItems" type="radio" name="alignItems" >
                                 <label>stretch</label>
 
                             </div>
 
-                            <div class="individualPropertiesContainer">
-                                <h4>flex-wrap</h4>
-                                <input class="flexWrap" type="radio" name="flexWrap" checked >
-                                <label>nowrap</label>
-                                <input class="flexWrap" type="radio" name="flexWrap" >
-                                <label>wrap</label>
-                                <input class="flexWrap" type="radio" name="flexWrap" >
-                                <label>wrap-reverse</label>
-                            </div>
 
                         </fieldset>  
 
@@ -171,40 +172,61 @@
 
                 <div id="checkboxBoxesContainer">
                     <div id="visibilityContainer">
-                        <h3>Visibilidade</h3>
+                        <h5>Visibilidade</h5>
                         <input onclick="HideShow(this)" class="hideShowbox"  id="hideShowbox1" type="checkbox" checked>
-                        <label for="hideShowbox1">Box-1</label>
+                        <label class="leftBottomText" for="hideShowbox1">Box-1</label>
                         <input onclick="HideShow(this)" class="hideShowbox" id="hideShowbox2" type="checkbox" checked>
-                        <label for="hideShowbox2">Box-2</label>
+                        <label class="leftBottomText" for="hideShowbox2">Box-2</label>
                         <input onclick="HideShow(this)" class="hideShowbox" id="hideShowbox3" type="checkbox" checked>
-                        <label for="hideShowbox3">Box-3</label>
+                        <label class="leftBottomText" for="hideShowbox3">Box-3</label>
                     </div>
 
-                    <div id="widthOfBoxesContainer">
-                        <h3>Largura</h3>
-
-                        <div id="widthOfBoxe1Container">
-                            <label for="rangeBox1">Largura do Box-1</label>
-                            <input  oninput="IncreaseDecrease(this)" class="rangeBox" id="rangeBox1" type="range" name="rangeBox1" step="1" min="0" max="180" value="90"> 
-                        </div >
-
-                        <div id="widthOfBoxe2Container">
-                            <label for="rangeBox2">Largura do Box-2</label>
-                            <input oninput="IncreaseDecrease(this)" class="rangeBox" id="rangeBox2" type="range" name="rangeBox2" step="1" min="0" max="180" value="90"> 
+                    <div id="dimensions">
+                        <div id="widthOfBoxesContainer">
+                            <h5>Largura</h5>
+    
+                            <div id="widthOfBoxe1Container">
+                                <label class="leftBottomText" for="rangeWidthBox1">Box-1</label>
+                                <input  oninput="IncreaseDecreaseWidth(this)"  class="rangeBox rangeBoxWidth" id="rangeWidthBox1" type="range" name="rangeWidthBox1" step="1" min="0" max="200" value="90"> 
+                            </div >
+    
+                            <div id="widthOfBoxe2Container">
+                                <label class="leftBottomText" for="rangeWidthBox2">Box-2</label>
+                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox2" type="range" name="rangeWidthBox2" step="1" min="0" max="200" value="90"> 
+                            </div>
+    
+                            <div id="widthOfBoxe3Container">
+                                <label class="leftBottomText" for="rangeWidthBox3">Box-3</label>
+                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox3" type="range" name="rangeWidthBox3" step="1" min="0" max="200" value="90"> 
+                            </div>
+    
                         </div>
 
-                        <div id="widthOfBoxe3Container">
-                            <label for="rangeBox3">Largura do Box-3</label>
-                            <input oninput="IncreaseDecrease(this)" class="rangeBox" id="rangeBox3" type="range" name="rangeBox3" step="1" min="0" max="180" value="90"> 
+                        <div id="heightOfBoxesContainer">
+                            <h5>Altura</h5>
+    
+                            <div id="heightOfBoxe1Container">
+                                <label class="leftBottomText" for="rangeHeightBox1">Box-1</label>
+                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox1" type="range" name="rangeHeightBox1" step="1" min="0" max="100" value="50"> 
+                            </div >
+    
+                            <div id="heightOfBoxe2Container">
+                                <label class="leftBottomText" for="rangeHeightBox2">Box-2</label>
+                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox2" type="range" name="rangeHeightBox2" step="1" min="0" max="100" value="50"> 
+                            </div>
+    
+                            <div id="heightOfBoxe3Container">
+                                <label class="leftBottomText" for="rangeHeightBox3">Box-3</label>
+                                <input oninput="IncreaseDecreaseHeight(this)"   class="rangeBox rangeBoxHeight" id="rangeHeightBox3" type="range" name="rangeHeightBox2" step="1" min="0" max="100" value="50"> 
+                            </div>
                         </div>
 
                     </div>
+
 
                 </div>
 
-                <div id="widthBoxesContainer">
 
-                </div>
             </div>
         </div>
 <script src="/script.js"></script>    
