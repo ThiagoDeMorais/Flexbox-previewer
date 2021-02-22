@@ -173,3 +173,12 @@ input[type=number]{
     margin-top: 20px;
 }
 
+.buttonReset{
+    border-radius: 7px;
+    background-color: #0F1E23 ;
+}
+
+.buttonReset:hover{
+    background-color: #15333d ;
+
+}

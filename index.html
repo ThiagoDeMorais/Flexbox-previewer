@@ -95,38 +95,39 @@
 
                             <div class="individualPropertiesContainer">
                                 <h4>order </h4>
-                                <label>Box-1</label>
+                                <label>Box1</label>
                                 <input id="order1" onclick="IncreaseDecreaseOrder(this)" class="order" type="number"  min="0" max="999" value="0">
-                                <label>Box-2</label>
+                                <label>Box2</label>
                                 <input id="order2" onclick="IncreaseDecreaseOrder(this)" class="order" type="number"  min="0" max="999" value="0">                               
-                                <label>Box-3</label>
+                                <label>Box3</label>
                                 <input id="order3" onclick="IncreaseDecreaseOrder(this)" class="order" type="number"  min="0" max="999" value="0"> 
                             </div>                           
 
                             <div class="individualPropertiesContainer">
                                 <h4>flex-grow</h4>
-                                <label>Box-1</label>
+                                <label>Box1</label>
                                 <input id="flexGrow1" onclick="IncreaseDecreaseFlexGrow(this)" class="flexGrow" type="number"  min="0" max="999" value="0">
-                                <label>Box-2</label>
+                                <label>Box2</label>
                                 <input id="flexGrow2" onclick="IncreaseDecreaseFlexGrow(this)" class="flexGrow" type="number"  min="0" max="999" value="0">                               
-                                <label>Box-3</label>
+                                <label>Box3</label>
                                 <input id="flexGrow3" onclick="IncreaseDecreaseFlexGrow(this)" class="flexGrow" type="number"  min="0" max="999" value="0">                 
                             </div>
 
                             <div class="individualPropertiesContainer">
                                 <h4>flex-shrink</h4>
-                                <label>Box-1</label>
+                                <label>Box1</label>
                                 <input id="flexShrink1" onclick="IncreaseDecreaseFlexShrink(this)" class="flexShrink" type="number"  min="0" max="999" value="0" placeholder="none">
-                                <label>Box-2</label>
+                                <label>Box2</label>
                                 <input id="flexShrink2" onclick="IncreaseDecreaseFlexShrink(this)" class="flexShrink" type="number"  min="0" max="999" value="0">                               
-                                <label>Box-3</label>
+                                <label>Box3</label>
                                 <input id="flexShrink3" onclick="IncreaseDecreaseFlexShrink(this)" class="flexShrink" type="number"  min="0" max="999" value="0"> 
+                                <input onclick="ResetShrink()" class="buttonReset" type="button" value= "Reset">
                             </div>
 
 
 
                             <div class="individualPropertiesContainer">
-                                <h4>align-self(Para o Box-1)</h4>
+                                <h4>align-self(Para o Box1)</h4>
                                 <input id="alignSelf1" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" checked >
                                 <label>auto</label>
                                 <input id="alignSelf2" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" >
@@ -157,20 +158,20 @@
                     <h1>Visualização</h1>
                 </div>
                 <div id="displayContainer">
-                    <div class="box" id="box1"> Box-1</div>
-                    <div class="box" id="box2"> Box-2</div>
-                    <div class="box" id="box3"> Box-3</div>
+                    <div class="box" id="box1"> Box1</div>
+                    <div class="box" id="box2"> Box2</div>
+                    <div class="box" id="box3"> Box3</div>
                 </div>
 
                 <div id="checkboxBoxesContainer">
                     <div id="visibilityContainer">
                         <h5>Visibilidade</h5>
                         <input onclick="HideShow(this)" class="hideShowbox"  id="hideShowbox1" type="checkbox" checked>
-                        <label class="leftBottomText" for="hideShowbox1">Box-1</label>
+                        <label class="leftBottomText" for="hideShowbox1">Box1</label>
                         <input onclick="HideShow(this)" class="hideShowbox" id="hideShowbox2" type="checkbox" checked>
-                        <label class="leftBottomText" for="hideShowbox2">Box-2</label>
+                        <label class="leftBottomText" for="hideShowbox2">Box2</label>
                         <input onclick="HideShow(this)" class="hideShowbox" id="hideShowbox3" type="checkbox" checked>
-                        <label class="leftBottomText" for="hideShowbox3">Box-3</label>
+                        <label class="leftBottomText" for="hideShowbox3">Box3</label>
                     </div>
 
                     <div id="dimensions">
@@ -179,18 +180,18 @@
                             <input id="RemoveHeight1" onclick="RemoveWidth(this)"   type="checkbox" checked>
 
                             <div id="widthOfBoxe1Container">
-                                <label class="leftBottomText" for="rangeWidthBox1">Box-1</label>
-                                <input  oninput="IncreaseDecreaseWidth(this)"  class="rangeBox rangeBoxWidth" id="rangeWidthBox1" type="range" name="rangeWidthBox1" step="2" min="50" max="200" value="40"> 
+                                <label class="leftBottomText" for="rangeWidthBox1">Box1</label>
+                                <input  oninput="IncreaseDecreaseWidth(this)"  class="rangeBox rangeBoxWidth" id="rangeWidthBox1" type="range" name="rangeWidthBox1" step="1" min="60" max="180" value="60"> 
                             </div >
     
                             <div id="widthOfBoxe2Container">
-                                <label class="leftBottomText" for="rangeWidthBox2">Box-2</label>
-                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox2" type="range" name="rangeWidthBox2" step="2" min="50" max="200" value="40"> 
+                                <label class="leftBottomText" for="rangeWidthBox2">Box2</label>
+                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox2" type="range" name="rangeWidthBox2" step="1" min="60" max="180" value="60"> 
                             </div>
     
                             <div id="widthOfBoxe3Container">
-                                <label class="leftBottomText" for="rangeWidthBox3">Box-3</label>
-                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox3" type="range" name="rangeWidthBox3" step="2" min="50" max="200" value="40"> 
+                                <label class="leftBottomText" for="rangeWidthBox3">Box3</label>
+                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox3" type="range" name="rangeWidthBox3" step="1" min="60" max="180" value="60"> 
                             </div>
     
                         </div>
@@ -200,18 +201,18 @@
                             <input id="RemoveHeight1" onclick="RemoveHeight(this)"   type="checkbox" checked>
     
                             <div id="heightOfBoxe1Container">
-                                <label class="leftBottomText" for="rangeHeightBox1">Box-1</label>
-                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox1" type="range" name="rangeHeightBox1" step="2" min="15" max="100" value="15"> 
+                                <label class="leftBottomText" for="rangeHeightBox1">Box1</label>
+                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox1" type="range" name="rangeHeightBox1" step="1" min="15" max="100" value="15"> 
                             </div >
     
                             <div id="heightOfBoxe2Container">
-                                <label class="leftBottomText" for="rangeHeightBox2">Box-2</label>
-                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox2" type="range" name="rangeHeightBox2" step="2" min="15" max="100" value="15"> 
+                                <label class="leftBottomText" for="rangeHeightBox2">Box2</label>
+                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox2" type="range" name="rangeHeightBox2" step="1" min="15" max="100" value="15"> 
                             </div>
     
                             <div id="heightOfBoxe3Container">
-                                <label class="leftBottomText" for="rangeHeightBox3">Box-3</label>
-                                <input oninput="IncreaseDecreaseHeight(this)"   class="rangeBox rangeBoxHeight" id="rangeHeightBox3" type="range" name="rangeHeightBox2" step="2" min="15" max="100" value="15"> 
+                                <label class="leftBottomText" for="rangeHeightBox3">Box3</label>
+                                <input oninput="IncreaseDecreaseHeight(this)"   class="rangeBox rangeBoxHeight" id="rangeHeightBox3" type="range" name="rangeHeightBox2" step="1" min="15" max="100" value="15"> 
                             </div>
                         </div>
 

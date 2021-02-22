@@ -337,6 +337,16 @@ function IncreaseDecreaseFlexShrink(element) {
 }
 /*IncreaseDecreaseFlexShrink-- */
 
+function ResetShrink() {
+    let boxes = document.getElementsByClassName("box");
+    let theCSSprop;
+
+    for(let i = 0; i<boxes.length;i++){
+        boxes[i].style.flexShrink = "initial";
+    }
+}
+
+
 
 /** Função responsável por modificar a propriedade align-self dos elementos*/
 /*AlignSelf++ */
