@@ -96,56 +96,48 @@
                             <div class="individualPropertiesContainer">
                                 <h4>order </h4>
                                 <label>Box-1</label>
-                                <input class="order" type="number"  min="0" max="999" value="0">
+                                <input id="order1" onclick="IncreaseDecreaseOrder(this)" class="order" type="number"  min="0" max="999" value="0">
                                 <label>Box-2</label>
-                                <input class="order" type="number"  min="0" max="999" value="0">                               
+                                <input id="order2" onclick="IncreaseDecreaseOrder(this)" class="order" type="number"  min="0" max="999" value="0">                               
                                 <label>Box-3</label>
-                                <input class="order" type="number"  min="0" max="999" value="0"> 
+                                <input id="order3" onclick="IncreaseDecreaseOrder(this)" class="order" type="number"  min="0" max="999" value="0"> 
                             </div>                           
 
                             <div class="individualPropertiesContainer">
                                 <h4>flex-grow</h4>
                                 <label>Box-1</label>
-                                <input class="flexGrow" type="number"  min="0" max="999" value="0">
+                                <input id="flexGrow1" onclick="IncreaseDecreaseFlexGrow(this)" class="flexGrow" type="number"  min="0" max="999" value="0">
                                 <label>Box-2</label>
-                                <input class="flexGrow" type="number"  min="0" max="999" value="0">                               
+                                <input id="flexGrow2" onclick="IncreaseDecreaseFlexGrow(this)" class="flexGrow" type="number"  min="0" max="999" value="0">                               
                                 <label>Box-3</label>
-                                <input class="flexGrow" type="number"  min="0" max="999" value="0">                 
+                                <input id="flexGrow3" onclick="IncreaseDecreaseFlexGrow(this)" class="flexGrow" type="number"  min="0" max="999" value="0">                 
                             </div>
 
                             <div class="individualPropertiesContainer">
                                 <h4>flex-shrink</h4>
                                 <label>Box-1</label>
-                                <input class="flexShrink" type="number"  min="0" max="999" value="0">
+                                <input id="flexShrink1" onclick="IncreaseDecreaseFlexShrink(this)" class="flexShrink" type="number"  min="0" max="999" value="0" placeholder="none">
                                 <label>Box-2</label>
-                                <input class="flexShrink" type="number"  min="0" max="999" value="0">                               
+                                <input id="flexShrink2" onclick="IncreaseDecreaseFlexShrink(this)" class="flexShrink" type="number"  min="0" max="999" value="0">                               
                                 <label>Box-3</label>
-                                <input class="flexShrink" type="number"  min="0" max="999" value="0"> 
+                                <input id="flexShrink3" onclick="IncreaseDecreaseFlexShrink(this)" class="flexShrink" type="number"  min="0" max="999" value="0"> 
                             </div>
 
-                            <div class="individualPropertiesContainer">
-                                <h4>flex-basis  </h4>
-                                <label>Box-1</label>
-                                <input class="flexBasis" type="number"  min="0" max="999" value="0">
-                                <label>Box-2</label>
-                                <input class="flexBasis" type="number"  min="0" max="999" value="0">                               
-                                <label>Box-3</label>
-                                <input class="flexBasis" type="number"  min="0" max="999" value="0"> 
-                            </div>
+
 
                             <div class="individualPropertiesContainer">
                                 <h4>align-self(Para o Box-1)</h4>
-                                <input class="alignSelf" type="radio" name="alignSelf" checked >
+                                <input id="alignSelf1" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" checked >
                                 <label>auto</label>
-                                <input class="alignSelf" type="radio" name="alignSelf" >
+                                <input id="alignSelf2" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" >
                                 <label>flex-start</label>
-                                <input class="alignSelf" type="radio" name="alignSelf" >
+                                <input id="alignSelf3" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" >
                                 <label>flex-end</label>
-                                <input class="alignSelf" type="radio" name="alignSelf" >
+                                <input id="alignSelf4" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" >
                                 <label>center</label>
-                                <input class="alignSelf" type="radio" name="alignSelf" >
+                                <input id="alignSelf5" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" >
                                 <label>baseline</label>
-                                <input class="alignSelf" type="radio" name="alignSelf" >
+                                <input id="alignSelf6" onclick="AlignSelf(this)" class="alignSelf" type="radio" name="alignSelf" >
                                 <label>stretch</label>
                             </div>
                             

@@ -68,11 +68,11 @@ function IncreaseDecreaseHeight(element) {
 function FlexDirectionChange(element) {
     let theCSSprop;/**Remover */
     let disPlayConteiner = document.getElementById("displayContainer");
-    console.log(disPlayConteiner);
+    console.log(element.id.style);
     switch(element.id){
         case "flexDirection1":
-                console.log(flexDirection1);/**Remover */
-                disPlayConteiner.style.flexDirection = "row";
+            console.log(flexDirection1);/**Remover */
+            disPlayConteiner.style.flexDirection = "row";
                 
             break;
         case "flexDirection2":
@@ -237,6 +237,100 @@ function AlignItems(element) {
 }
 /*JustifyContentChange-- */
 /*** Funções aplicadas ao conteiner-- */
+
+
+/*** Funções aplicadas ao(s) elemento(s)-- */
+
+
+function IncreaseDecreaseOrder(element) {
+    let orderNumber = element;
+    let orderNumberArray = document.getElementsByClassName("order");
+    let boxes = document.getElementsByClassName("box") ;
+    let theCSSprop;
+
+    for(let i = 0; i<orderNumberArray.length;i++){
+        if(orderNumberArray[i].id == orderNumber.id ){
+            boxes[i].style.order = orderNumber.value;
+            theCSSprop = window.getComputedStyle(boxes[i], null).getPropertyValue("width")
+            console.log(theCSSprop);/**Remover */
+        }
+    }
+}
+
+function IncreaseDecreaseFlexGrow(element) {
+    let flexGrowNumber = element;
+    let flexGrowNumberArray = document.getElementsByClassName("flexGrow");
+    let boxes = document.getElementsByClassName("box") ;
+    let theCSSprop;
+
+    for(let i = 0; i<flexGrowNumberArray.length;i++){
+        if(flexGrowNumberArray[i].id == flexGrowNumber.id ){
+            boxes[i].style.flexGrow = flexGrowNumber.value;
+            theCSSprop = window.getComputedStyle(boxes[i], null).getPropertyValue("flex-grow")
+            console.log(theCSSprop);/**Remover */
+        }
+    }
+}
+
+function IncreaseDecreaseFlexShrink(element) {
+    let flexShrinkNumber = element;
+    let flexShrinkNumberArray = document.getElementsByClassName("flexShrink");
+    let boxes = document.getElementsByClassName("box");
+    let theCSSprop;
+
+    for(let i = 0; i<flexShrinkNumberArray.length;i++){
+        if(flexShrinkNumberArray[i].id == flexShrinkNumber.id ){
+            boxes[i].style.flexShrink = flexShrinkNumber.value;
+            theCSSprop = window.getComputedStyle(boxes[i], null).getPropertyValue("flex-shrink")
+            console.log(theCSSprop);/**Remover */
+        }
+    }
+}
+
+function AlignSelf(element) {
+    let theCSSprop;/**Remover */
+    box = document.getElementById("box1")
+    switch(element.id){
+        case "alignSelf1":
+            console.log(flexWrap1);/**Remover */
+            box.style.alignSelf = "auto";
+            theCSSprop = window.getComputedStyle(box, null).getPropertyValue("align-self")
+            console.log(theCSSprop);
+
+            break;
+        case "alignSelf2":
+            console.log(flexWrap2);/**Remover */
+            box.style.alignSelf = "flex-start";
+            theCSSprop = window.getComputedStyle(box, null).getPropertyValue("align-self")
+            console.log(theCSSprop);
+
+            break;
+        case "alignSelf3":
+            console.log(flexWrap3);/**Remover */
+            box.style.alignSelf = "flex-end";
+            theCSSprop = window.getComputedStyle(box, null).getPropertyValue("align-self")
+            console.log(theCSSprop);
+            break;      
+        case "alignSelf4":
+            console.log(flexWrap3);/**Remover */
+            box.style.alignSelf = "center";
+            theCSSprop = window.getComputedStyle(box, null).getPropertyValue("align-self")
+            console.log(theCSSprop);
+            break; 
+        case "alignSelf5":
+            console.log(flexWrap3);/**Remover */
+            box.style.alignSelf = "baseline";    
+            theCSSprop = window.getComputedStyle(box, null).getPropertyValue("align-self")
+            console.log(theCSSprop);        
+            break;                    
+        case "alignSelf6":
+            console.log(flexWrap3);/**Remover */
+            box.style.alignSelf = "stretch";   
+            theCSSprop = window.getComputedStyle(box, null).getPropertyValue("align-self")
+            console.log(theCSSprop);         
+            break;           
+    }
+}
 
 
 
