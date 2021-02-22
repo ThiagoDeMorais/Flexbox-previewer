@@ -175,41 +175,43 @@
 
                     <div id="dimensions">
                         <div id="widthOfBoxesContainer">
-                            <h5>Largura</h5>
-    
+                            <h5 class="textToOptionalElements">Largura</h5>
+                            <input id="RemoveHeight1" onclick="RemoveWidth(this)"   type="checkbox" checked>
+
                             <div id="widthOfBoxe1Container">
                                 <label class="leftBottomText" for="rangeWidthBox1">Box-1</label>
-                                <input  oninput="IncreaseDecreaseWidth(this)"  class="rangeBox rangeBoxWidth" id="rangeWidthBox1" type="range" name="rangeWidthBox1" step="1" min="0" max="200" value="90"> 
+                                <input  oninput="IncreaseDecreaseWidth(this)"  class="rangeBox rangeBoxWidth" id="rangeWidthBox1" type="range" name="rangeWidthBox1" step="2" min="50" max="200" value="40"> 
                             </div >
     
                             <div id="widthOfBoxe2Container">
                                 <label class="leftBottomText" for="rangeWidthBox2">Box-2</label>
-                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox2" type="range" name="rangeWidthBox2" step="1" min="0" max="200" value="90"> 
+                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox2" type="range" name="rangeWidthBox2" step="2" min="50" max="200" value="40"> 
                             </div>
     
                             <div id="widthOfBoxe3Container">
                                 <label class="leftBottomText" for="rangeWidthBox3">Box-3</label>
-                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox3" type="range" name="rangeWidthBox3" step="1" min="0" max="200" value="90"> 
+                                <input oninput="IncreaseDecreaseWidth(this)" class="rangeBox rangeBoxWidth" id="rangeWidthBox3" type="range" name="rangeWidthBox3" step="2" min="50" max="200" value="40"> 
                             </div>
     
                         </div>
 
                         <div id="heightOfBoxesContainer">
-                            <h5>Altura</h5>
+                            <h5 class="textToOptionalElements" >Altura</h5>
+                            <input id="RemoveHeight1" onclick="RemoveHeight(this)"   type="checkbox" checked>
     
                             <div id="heightOfBoxe1Container">
                                 <label class="leftBottomText" for="rangeHeightBox1">Box-1</label>
-                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox1" type="range" name="rangeHeightBox1" step="1" min="0" max="100" value="50"> 
+                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox1" type="range" name="rangeHeightBox1" step="2" min="15" max="100" value="15"> 
                             </div >
     
                             <div id="heightOfBoxe2Container">
                                 <label class="leftBottomText" for="rangeHeightBox2">Box-2</label>
-                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox2" type="range" name="rangeHeightBox2" step="1" min="0" max="100" value="50"> 
+                                <input oninput="IncreaseDecreaseHeight(this)"  class="rangeBox rangeBoxHeight" id="rangeHeightBox2" type="range" name="rangeHeightBox2" step="2" min="15" max="100" value="15"> 
                             </div>
     
                             <div id="heightOfBoxe3Container">
                                 <label class="leftBottomText" for="rangeHeightBox3">Box-3</label>
-                                <input oninput="IncreaseDecreaseHeight(this)"   class="rangeBox rangeBoxHeight" id="rangeHeightBox3" type="range" name="rangeHeightBox2" step="1" min="0" max="100" value="50"> 
+                                <input oninput="IncreaseDecreaseHeight(this)"   class="rangeBox rangeBoxHeight" id="rangeHeightBox3" type="range" name="rangeHeightBox2" step="2" min="15" max="100" value="15"> 
                             </div>
                         </div>
 

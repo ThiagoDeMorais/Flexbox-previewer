@@ -62,8 +62,8 @@ h2{
 .box{
     border-radius: 5px;
     /*height: 90px;/*Teste*/
-    width: 90px;/**/
-    height: 50px;/**/ 
+    width: 50px;/**/
+    height: 15px;/**/ 
 }
 
 #box1{
@@ -119,6 +119,10 @@ h2{
 
 .leftBottomText{
     font-size: 0.7em;
+}
+
+.textToOptionalElements{
+    display: inline;
 }
 
 .rangeBox{

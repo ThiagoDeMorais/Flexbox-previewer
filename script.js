@@ -58,6 +58,47 @@ function IncreaseDecreaseHeight(element) {
         }
     }
 }
+
+function RemoveWidth(element) {  
+    let forRangeBoxWidth  = element;
+    let rangeBoxWidthArray = document.getElementsByClassName("rangeBoxWidth");
+    let boxes = document.getElementsByClassName("box") ;
+
+    for(let i = 0; i<boxes.length;i++){
+            console.log(forRangeBoxWidth.checked);
+            if(!forRangeBoxWidth.checked){
+                boxes[i].style.width = "auto";
+                rangeBoxWidthArray[i].disabled  = true;
+                rangeBoxWidthArray[i].value = "0";
+
+            }else{
+                rangeBoxWidthArray[i].disabled  = false;
+
+            }   
+    }
+}
+
+function RemoveHeight(element) {
+    let forRangeBoxHeight  = element;
+    let rangeBoxHeightArray = document.getElementsByClassName("rangeBoxHeight");
+    let boxes = document.getElementsByClassName("box") ;
+
+    for(let i = 0; i<boxes.length;i++){
+            console.log(forRangeBoxHeight.checked);
+            if(!forRangeBoxHeight.checked){
+                boxes[i].style.height = "auto";
+                rangeBoxHeightArray[i].disabled  = true;
+                rangeBoxHeightArray[i].value = "0";
+
+            }else{
+                rangeBoxHeightArray[i].disabled  = false;
+
+            }   
+    }
+}
+
+
+
 /*IncreaseDecreaseHeight++ */
 /*** Funções aplicadas aos boxes-- */
 
@@ -239,9 +280,9 @@ function AlignItems(element) {
 /*** Funções aplicadas ao conteiner-- */
 
 
-/*** Funções aplicadas ao(s) elemento(s)-- */
-
-
+/*** Funções aplicadas ao(s) elemento(s)++ */
+/** Função responsável por modificar a propriedade order dos elementos*/
+/*IncreaseDecreaseOrder++ */
 function IncreaseDecreaseOrder(element) {
     let orderNumber = element;
     let orderNumberArray = document.getElementsByClassName("order");
@@ -256,7 +297,11 @@ function IncreaseDecreaseOrder(element) {
         }
     }
 }
+/*IncreaseDecreaseOrder-- */
 
+
+/** Função responsável por modificar a propriedade flex-grow dos elementos*/
+/*IncreaseDecreaseFlexGrow++ */
 function IncreaseDecreaseFlexGrow(element) {
     let flexGrowNumber = element;
     let flexGrowNumberArray = document.getElementsByClassName("flexGrow");
@@ -271,7 +316,11 @@ function IncreaseDecreaseFlexGrow(element) {
         }
     }
 }
+/*IncreaseDecreaseFlexGrow-- */
 
+
+/** Função responsável por modificar a propriedade flex-shrink dos elementos*/
+/*IncreaseDecreaseFlexShrink++ */
 function IncreaseDecreaseFlexShrink(element) {
     let flexShrinkNumber = element;
     let flexShrinkNumberArray = document.getElementsByClassName("flexShrink");
@@ -286,7 +335,11 @@ function IncreaseDecreaseFlexShrink(element) {
         }
     }
 }
+/*IncreaseDecreaseFlexShrink-- */
 
+
+/** Função responsável por modificar a propriedade align-self dos elementos*/
+/*AlignSelf++ */
 function AlignSelf(element) {
     let theCSSprop;/**Remover */
     box = document.getElementById("box1")
@@ -331,7 +384,8 @@ function AlignSelf(element) {
             break;           
     }
 }
-
+/*AlignSelf-- */
+/*** Funções aplicadas ao(s) elemento(s)-- */
 
 
 /*
