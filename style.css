@@ -50,30 +50,28 @@ h2{
     border-radius: 5px;
     margin: auto;
     display: flex;
-    
-
-
-
 }
 
-.box{
+
+
+.rect{
     border-radius: 5px;
     /*height: 90px;/*Teste*/
     width: 50px;/**/
     height: 15px;/**/ 
 }
 
-#box1{
+#rect1{
     background-color: green;    
     
 }
 
-#box2{
+#rect2{
     /*display: none; */
     background-color: blue;
 }
 
-#box3{
+#rect3{
     /*display: none; */
     background-color: red;
 }
